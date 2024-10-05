@@ -60,7 +60,7 @@ const Message = () => {
 {
   massages?.map((x,i)=>{
     return(
-      x.username == user.username ? (
+      x.username == user && user?.username ? (
         <div className='flex flex-row flex-wrap justify-end items-center p-2 w-full'>
             <div className='bg-white m-2 p-2  rounded-xl w-auto h-auto'>
       <span className='w-full h-40'>{x.content}</span>
